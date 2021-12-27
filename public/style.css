@@ -1,0 +1,308 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Lobster", cursive;
+}
+
+.blur {
+  filter: blur(8px);
+}
+
+.header {
+  background-color: #f1a40a;
+  width: 100%;
+  color: white;
+  height: 50px;
+  text-align: center;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .div1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 55%;
+  height: 90%;
+}
+
+.header .div2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  height: 90%;
+}
+
+.darkmodeBtn {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+#main {
+  margin-top: 10px;
+}
+
+.takeNote {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.takeNote #inputTakeNote {
+  border: none;
+  width: 90%;
+  height: 35px;
+  border-radius: 6px;
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+
+.takeNote input:focus {
+  outline: none;
+}
+
+.onClickTakeNote {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-top: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  border-bottom: none;
+  width: 90%;
+  height: 35px;
+  padding: 10px;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  background-color: #f1a40a;
+  color: white;
+}
+
+.title::placeholder {
+  font-weight: bold;
+  color: white;
+}
+
+.titleTxt {
+  border-bottom: none;
+  border-right: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  border-top: none;
+  width: 90%;
+  height: 35px;
+  padding: 10px;
+  text-overflow: ellipsis;
+}
+
+#btnClrBlue {
+  background-color: #89cff0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#btnClrRed {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #df2800;
+  cursor: pointer;
+}
+
+#btnClrYellow {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffef00;
+  cursor: pointer;
+}
+
+#btnClrOrange {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #f1a40a;
+  cursor: pointer;
+}
+
+#btnClrLightblue {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #00ced1;
+  cursor: pointer;
+}
+
+#btnClrPurple {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #9932cc;
+  cursor: pointer;
+}
+
+#btnDiv {
+  width: 90%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  border-top: none;
+  padding: 10px;
+}
+
+#btnDiv #btnDiv1 {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#btnDiv #btnDiv2 {
+  width: 40%;
+  display: flex;
+}
+
+#btnDiv #btnDiv2 p {
+  cursor: pointer;
+  margin: auto;
+}
+
+#createdNotesMain {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+#createdNotesMain .notesdiv {
+  background-color: white;
+  height: 200px;
+  margin: 10px;
+  border-radius: 6px;
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid grey;
+}
+
+#createdNotesMain .notesdiv .title1 {
+  background-color: #f1a40a;
+  width: 100%;
+  height: 35px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  padding: 3px 0px 0px 10px;
+  font-weight: bold;
+  color: white;
+  word-wrap: break-word;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#createdNotesMain .notesdiv .titleTxt1 {
+  width: 100%;
+  height: 100px;
+  font-size: 12px;
+  word-wrap: break-word;
+  text-overflow: hidden;
+  overflow: hidden;
+  padding: 0px 10px 0px 10px;
+  cursor: pointer;
+}
+
+#createdNotesMain .notesdiv .dltBtn {
+  width: 100%;
+  height: 30px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding: 16px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+#createdNotesMain .notesdiv .dltBtn i {
+  cursor: pointer;
+}
+
+#editDivMain {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  top: 100px;
+}
+
+.editDivMain1 {
+  width: 80%;
+  height: 300px;
+  position: relative;
+  top: 20%;
+  border-radius: 8px;
+}
+
+.editDivTitle {
+  width: 100%;
+  height: 15%;
+  border: none;
+  background-color: #f1a40a;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  padding: 10px;
+}
+
+.editDivTitle:focus {
+  outline: none;
+}
+
+.editDivTitleTxt {
+  width: 100%;
+  height: 70%;
+  border: none;
+  padding: 10px;
+}
+
+.editDivTitleTxt:focus {
+  outline: none;
+}
+
+.editDivDoneDiv {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 30px 0px 0px;
+  cursor: pointer;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  color: black;
+}
+
+.editDivDoneDiv p {
+  margin-left: 40px;
+}
